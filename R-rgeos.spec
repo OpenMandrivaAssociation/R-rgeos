@@ -22,6 +22,9 @@ BuildRequires:    R-testthat R-plyr R-XML
 %else
 BuildRequires:    R-maptools R-testthat R-plyr R-XML 
 %endif
+BuildRequires:    gdal
+BuildRequires:    gdal-devel
+BuildRequires:    proj
 
 %description
 Interface to Geometry Engine - Open Source (GEOS) using the C API for
