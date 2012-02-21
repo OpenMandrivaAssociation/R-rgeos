@@ -1,10 +1,10 @@
-%bcond_without bootstrap
+%bcond_with bootstrap
 %global packname  rgeos
 %global rlibdir  %{_libdir}/R/library
 
 Name:             R-%{packname}
 Version:          0.2_2
-Release:          1
+Release:          2
 Summary:          Interface to Geometry Engine - Open Source (GEOS)
 Group:            Sciences/Mathematics
 License:          GPL (>= 2)
