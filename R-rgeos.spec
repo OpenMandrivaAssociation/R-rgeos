@@ -4,7 +4,7 @@
 
 Name:             R-%{packname}
 Version:          0.2_2
-Release:          2
+Release:          3
 Summary:          Interface to Geometry Engine - Open Source (GEOS)
 Group:            Sciences/Mathematics
 License:          GPL (>= 2)
@@ -16,6 +16,9 @@ Requires:         R-testthat R-plyr R-XML
 %else
 Requires:         R-maptools R-testthat R-plyr R-XML 
 %endif
+Requires:         gdal
+Requires:         gdal-devel
+Requires:         proj
 BuildRequires:    R-devel Rmath-devel texlive-collection-latex R-methods R-sp R-stringr
 %if %{with bootstrap}
 BuildRequires:    R-testthat R-plyr R-XML 
