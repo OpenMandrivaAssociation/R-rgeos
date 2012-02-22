@@ -10,20 +10,17 @@ Group:            Sciences/Mathematics
 License:          GPL (>= 2)
 URL:              http://cran.r-project.org/web/packages/%{packname}/index.html
 Source0:          http://cran.r-project.org/src/contrib/%{packname}_0.2-2.tar.gz
-Requires:         R-methods R-sp R-stringr 
-%if %{with bootstrap}
-Requires:         R-testthat R-plyr R-XML 
-%else
-Requires:         R-maptools R-testthat R-plyr R-XML 
+Requires:         R-methods R-sp R-stringr R-testthat R-plyr R-XML
+%if %{without bootstrap}
+Requires:         R-maptools
 %endif
 Requires:         gdal
 Requires:         gdal-devel
 Requires:         proj
-BuildRequires:    R-devel Rmath-devel texlive-collection-latex R-methods R-sp R-stringr
-%if %{with bootstrap}
-BuildRequires:    R-testthat R-plyr R-XML 
-%else
-BuildRequires:    R-maptools R-testthat R-plyr R-XML 
+BuildRequires:    R-devel Rmath-devel texlive-collection-latex
+BuildRequires:    R-methods R-sp R-stringr R-testthat R-plyr R-XML
+%if %{without bootstrap}
+BuildRequires:    R-maptools
 %endif
 BuildRequires:    gdal
 BuildRequires:    gdal-devel
