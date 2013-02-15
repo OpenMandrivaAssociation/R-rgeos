@@ -3,13 +3,13 @@
 %global rlibdir  %{_libdir}/R/library
 
 Name:             R-%{packname}
-Version:          0.2_2
-Release:          3
+Version:          0.2.13
+Release:          1
 Summary:          Interface to Geometry Engine - Open Source (GEOS)
 Group:            Sciences/Mathematics
 License:          GPL (>= 2)
 URL:              http://cran.r-project.org/web/packages/%{packname}/index.html
-Source0:          http://cran.r-project.org/src/contrib/%{packname}_0.2-2.tar.gz
+Source0:          http://cran.r-project.org/src/contrib/rgeos_0.2-13.tar.gz
 Requires:         R-methods R-sp R-stringr R-testthat R-plyr R-XML
 %if %{without bootstrap}
 Requires:         R-maptools
@@ -61,3 +61,4 @@ rm -f %{buildroot}%{rlibdir}/R.css
 %{rlibdir}/%{packname}/libs
 %{rlibdir}/%{packname}/poly-ex-gpc
 %{rlibdir}/%{packname}/tests
+%{rlibdir}/%{packname}/wkts
