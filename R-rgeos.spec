@@ -4,7 +4,7 @@
 
 Name:             R-%{packname}
 Version:          0.2.13
-Release:          1
+Release:          2
 Summary:          Interface to Geometry Engine - Open Source (GEOS)
 Group:            Sciences/Mathematics
 License:          GPL (>= 2)
