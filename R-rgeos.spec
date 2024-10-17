@@ -8,7 +8,7 @@ Release:          2
 Summary:          Interface to Geometry Engine - Open Source (GEOS)
 Group:            Sciences/Mathematics
 License:          GPL (>= 2)
-URL:              http://cran.r-project.org/web/packages/%{packname}/index.html
+URL:              https://cran.r-project.org/web/packages/%{packname}/index.html
 Source0:          http://cran.r-project.org/src/contrib/rgeos_0.2-13.tar.gz
 Requires:         R-methods R-sp R-stringr R-testthat R-plyr R-XML
 %if %{without bootstrap}
